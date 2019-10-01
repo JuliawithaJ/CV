@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: quicksand;''
+}
+h1, h2{
+	font-family: roboto;
+	color:green;
+	text-align: center
+}
+
+.introduction, #page, .reseaux{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.introduction img {
+	border-radius: 50%;
+	margin: 20px 0;
+}
+.card{
+	border-radius: 5px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+	margin: 25px 0;
+	padding: 25px;
+	min-width: 60%;
+}
+.card > h2 , .card span {
+	text-transform: uppercase;
+}
+span {
+	display:block;
+	margin-bottom: 5px;
+}
+.texte{
+	padding-left: 20px;
+}
+.texte > h3 {
+	margin: 10px 0;
+}
+.reseaux{
+	list-style-type: none;
+	padding: 10px 0;
+}
+.reseaux li{
+	margin: 5px 0;
+}
+.reseaux a {
+	color: black;
+}
+.reseaux a:hover {
+	color: green;
+}
+
+@media only screen and (min-width:641px) and (max-width:1300px){
+	.card{
+		width:70%;
+	}
+}
+@media only screen and (max-width:640px){
+	.card{
+		width:100%;
+	}
+	.reseaux li{
+		
+		width: 35px;
+		height: 35px;
+	}
+}
